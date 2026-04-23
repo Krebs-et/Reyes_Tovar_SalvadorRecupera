@@ -1,7 +1,6 @@
 package com.ingenium.reyes_tovar_salvador5c.database.entity;
 
 import com.ingenium.reyes_tovar_salvador5c.model.Estados;
-import com.ingenium.reyes_tovar_salvador5c.model.Jugador;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,12 +21,7 @@ public class PartidaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-
-    String nombre;
-
     LocalDate fecha;
-
-    double saldo;
 
     @Enumerated(EnumType.ORDINAL)
     Estados estado;
@@ -35,6 +29,5 @@ public class PartidaEntity {
     @ManyToOne()
     @JoinColumn(name = "partida_jugador" )
     JugadorEntity jugadorId;
-
 
 }
