@@ -18,6 +18,18 @@ public class TiroEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "tiros_partida")
+    PartidaEntity partida;
+
+    int valorDado1;
+
+    int valorDado2;
+
+    int suma;
+
+    boolean esGanador;
+
 
 
 }

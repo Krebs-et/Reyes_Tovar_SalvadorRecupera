@@ -1,10 +1,9 @@
 package com.ingenium.reyes_tovar_salvador5c.service.useCase;
 
 import com.ingenium.reyes_tovar_salvador5c.DTO.TiroDTO;
-import com.ingenium.reyes_tovar_salvador5c.model.Tiro;
 
 public interface LanzarTiroUseCase {
 
-    Tiro execute(TiroDTO dto);
+    String execute(TiroDTO dto);
 
 }
